@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n = "Banana"
+        let result = ""
+
+        for(let c of n){
+            if(c >= "A" && c <= "Z"){
+                result += c.toLowerCase()
+            }else if(c >= "a" && c <= "z"){
+                result += c.toUpperCase()
+            }
+            else{
+                result += c
+            }
+        }
+
+        console.log("Swap Case : "+result);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
