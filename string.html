@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      let s = "Doremon";
+      let s2 = new String("Doremon");
+      let s4 = new String("Doremon");
+      let s3 = "Doremon";
+      console.log(s);
+      console.log(s2);
+
+      // console.log(typeof s);
+      // console.log(typeof s2);
+      // console.log(s === s3);
+      // console.log(s2 == s4);
+
+      // s[0] = "K"
+      // console.log(s);
+
+      // console.log(s.length);
+
+      // temp = ""
+      // for(let i=0;i<s.length;i++){
+      //     temp += s[i]
+      //     // temp = "" + D -> D
+      //     // temp = D + o -> Do
+      //     console.log(s[i]);
+
+      // }
+      // console.log(temp);
+
+      // for(let c of s){
+      //     console.log(c);
+      // }
+
+      console.log(s.slice(2, 5));
+      console.log(s.slice(-6, -2));
+      console.log(s.slice(-2, -6));
+      console.log(s.slice(1));
+      console.log(s.slice(-1));
+      console.log(s.slice(0, 10));
+
+      console.log(s.substring(0, 6));
+      console.log(s.substring(-6, 5));
+
+      console.log(s.substr(1, 5));
+      console.log(s.substr(4, 2));
+      console.log(s.substr(2));
+
+      console.log(s.toUpperCase());
+      console.log(s.toLowerCase());
+
+      let n = "   Shinchan       ";
+      console.log(n.trim());
+      console.log(n.trimStart());
+      console.log(n.trimEnd());
+      console.log(n.trimLeft());
+      console.log(n.trimRight());
+
+      let m = "banana";
+      console.log(m.indexOf("a", 2));
+      console.log(m.lastIndexOf("a", 2));
+      console.log(m.includes("a", 3));
+      console.log(m.startsWith("a", 1));
+      console.log(m.endsWith("n", 5));
+
+      console.log(m.replace("a", "x"));
+      console.log(m.replaceAll("a", "i"));
+
+      let first = "Doremon";
+      let last = "Kumar";
+
+      console.log(first.concat(" ",last,"$"));
+
+      let full = first + " " + last
+      console.log(full);
+      
+      
+    </script>
+  </head>
+  <body>
+    <h1>String</h1>
+  </body>
+</html>
